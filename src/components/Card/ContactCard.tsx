@@ -12,7 +12,7 @@ import "./ContactCard.css"; // Import the new CSS file
 
 const ContactCard: React.FC = () => {
   return (
-    <Card className="w-full max-w-md m-auto mt-10 overflow-hidden">
+    <Card className="w-full max-w-md m-auto mt-10 overflow-hidden shadow-xl">
       <div className="bg-gradient-to-br from-green-400 via-teal-500 to-blue-500 p-6 text-white">
         <CardHeader className="card-header">
           <Avatar className="w-24 h-24 border-4 border-white shadow-lg">
