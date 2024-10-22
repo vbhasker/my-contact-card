@@ -42,7 +42,3 @@ The main component of this application is the `ContactCard`, which includes:
 ## Customization
 
 You can easily customize the contact card by modifying the `ContactCard.tsx` and `ContactCard.css` files in the `src/components/Card` directory.
-
-## Building for Production
-
-To create a production build, run:
