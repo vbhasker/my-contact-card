@@ -8,7 +8,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Github, Linkedin, X, Mail } from "lucide-react";
-import "./ContactCard.css"; // Import the new CSS file
+import "./ContactCard.css";
 
 const ContactCard: React.FC = () => {
   return (
@@ -17,20 +17,20 @@ const ContactCard: React.FC = () => {
         <CardHeader className="card-header">
           <Avatar className="w-24 h-24 border-4 border-white shadow-lg">
             <AvatarImage
-              src="/placeholder.svg?height=96&width=96"
+              src="./public/profile.jpg?height=96&width=96"
               alt="Profile Picture"
             />
             <AvatarFallback>VAB</AvatarFallback>
           </Avatar>
           <div className="text-center">
             <h2 className="text-2xl">Vinodh Amudala Bhasker</h2>
-            <p className="text-green-100">Tech Lead</p>
+            <p className="text-green-100">Technology Leader</p>
           </div>
         </CardHeader>
         <CardContent className="text-center">
           <p className="text-sm text-green-100">
-            Passionate web developer creating beautiful and functional websites.
-            Always learning and exploring new technologies.
+            Passionate to solve complex business problems through innovative
+            solutions leveraging AI and cloud technologies.
           </p>
         </CardContent>
       </div>
