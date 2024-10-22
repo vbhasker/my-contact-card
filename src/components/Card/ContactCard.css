@@ -1,0 +1,99 @@
+.card {
+  width: 100%;
+  max-width: 28rem;
+  /* 28rem = 448px */
+  margin: auto;
+  overflow: hidden;
+}
+
+.bg-gradient {
+  background: linear-gradient(to bottom right, #38a169, #319795, #3182ce);
+  /* Tailwind colors */
+  padding: 1.5rem;
+  /* 24px */
+  color: white;
+}
+
+.card-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  /* Space between items */
+}
+
+.avatar {
+  width: 24px;
+  /* 24 * 4 = 96px */
+  height: 24px;
+  border: 4px solid white;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-green-100 {
+  color: #c6f6d5;
+  /* Tailwind color */
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  /* 14px */
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  /* 24px */
+  font-weight: bold;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 1rem;
+  /* Space between buttons */
+  padding: 1.5rem;
+  /* 24px */
+  background-color: white;
+}
+
+.button {
+  background-color: #c6f6d5;
+  /* Tailwind color */
+  color: #38a169;
+  /* Tailwind color */
+  transition: background-color 0.2s;
+}
+
+.button:hover {
+  background-color: #9ae6b4;
+  /* Tailwind color */
+}
+
+.button-teal {
+  background-color: #b2f5ea;
+  /* Tailwind color */
+  color: #319795;
+  /* Tailwind color */
+}
+
+.button-teal:hover {
+  background-color: #81e6d9;
+  /* Tailwind color */
+}
+
+.button-blue {
+  background-color: #bee3f8;
+  /* Tailwind color */
+  color: #3182ce;
+  /* Tailwind color */
+}
+
+.button-blue:hover {
+  background-color: #90cdf4;
+  /* Tailwind color */
+}

@@ -1,0 +1,75 @@
+import React from "react";
+import {
+  Card,
+  CardContent,
+  CardFooter,
+  CardHeader,
+} from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Github, Linkedin, X, Mail } from "lucide-react";
+import "./ContactCard.css"; // Import the new CSS file
+
+const ContactCard: React.FC = () => {
+  return (
+    <Card className="w-full max-w-md m-auto mt-10 overflow-hidden">
+      <div className="bg-gradient-to-br from-green-400 via-teal-500 to-blue-500 p-6 text-white">
+        <CardHeader className="card-header">
+          <Avatar className="w-24 h-24 border-4 border-white shadow-lg">
+            <AvatarImage
+              src="/placeholder.svg?height=96&width=96"
+              alt="Profile Picture"
+            />
+            <AvatarFallback>JD</AvatarFallback>
+          </Avatar>
+          <div className="text-center">
+            <h2 className="text-2xl">Vinodh Amudala Bhasker</h2>
+            <p className="text-green-100">Tech Lead</p>
+          </div>
+        </CardHeader>
+        <CardContent className="text-center">
+          <p className="text-sm text-green-100">
+            Passionate web developer creating beautiful and functional websites.
+            Always learning and exploring new technologies.
+          </p>
+        </CardContent>
+      </div>
+      <CardFooter className="card-footer">
+        <Button variant="outline" size="icon" className="button" asChild>
+          <a
+            href="https://linkedin.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Linkedin className="h-5 w-5" />
+            <span className="sr-only">LinkedIn profile</span>
+          </a>
+        </Button>
+        <Button variant="outline" size="icon" className="button-teal" asChild>
+          <a
+            href="https://twitter.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <X className="h-5 w-5" />
+            <span className="sr-only">Twitter profile</span>
+          </a>
+        </Button>
+        <Button variant="outline" size="icon" className="button-blue" asChild>
+          <a href="mailto:johndoe@example.com">
+            <Mail className="h-5 w-5" />
+            <span className="sr-only">Email address</span>
+          </a>
+        </Button>
+        <Button variant="outline" size="icon" className="button-blue" asChild>
+          <a href="https://github.com">
+            <Github className=" h-5 w-5" />
+            <span className="sr-only">Github profile</span>
+          </a>
+        </Button>
+      </CardFooter>
+    </Card>
+  );
+};
+
+export default ContactCard;
