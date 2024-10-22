@@ -20,7 +20,7 @@ const ContactCard: React.FC = () => {
               src="/placeholder.svg?height=96&width=96"
               alt="Profile Picture"
             />
-            <AvatarFallback>JD</AvatarFallback>
+            <AvatarFallback>VAB</AvatarFallback>
           </Avatar>
           <div className="text-center">
             <h2 className="text-2xl">Vinodh Amudala Bhasker</h2>
@@ -37,7 +37,7 @@ const ContactCard: React.FC = () => {
       <CardFooter className="card-footer">
         <Button variant="outline" size="icon" className="button" asChild>
           <a
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/in/vinodh-bhasker"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -47,7 +47,7 @@ const ContactCard: React.FC = () => {
         </Button>
         <Button variant="outline" size="icon" className="button-teal" asChild>
           <a
-            href="https://twitter.com"
+            href="https://x.com/vinodh_ab"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -56,13 +56,17 @@ const ContactCard: React.FC = () => {
           </a>
         </Button>
         <Button variant="outline" size="icon" className="button-blue" asChild>
-          <a href="mailto:johndoe@example.com">
+          <a href="mailto:vinodh@example.com">
             <Mail className="h-5 w-5" />
             <span className="sr-only">Email address</span>
           </a>
         </Button>
         <Button variant="outline" size="icon" className="button-blue" asChild>
-          <a href="https://github.com">
+          <a
+            href="https://github.com/vbhasker"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <Github className=" h-5 w-5" />
             <span className="sr-only">Github profile</span>
           </a>
