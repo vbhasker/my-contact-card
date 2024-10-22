@@ -34,14 +34,14 @@ const ContactCard: React.FC = () => {
           </p>
         </CardContent>
       </div>
-      <CardFooter className="card-footer">
+      <CardFooter className="card-footer pt-5">
         <Button variant="outline" size="icon" className="button" asChild>
           <a
             href="https://www.linkedin.com/in/vinodh-bhasker"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Linkedin className="h-5 w-5" />
+            <Linkedin className="h-5 w-5 mt-1" />
             <span className="sr-only">LinkedIn profile</span>
           </a>
         </Button>
@@ -55,7 +55,7 @@ const ContactCard: React.FC = () => {
             <span className="sr-only">Twitter profile</span>
           </a>
         </Button>
-        <Button variant="outline" size="icon" className="button-blue" asChild>
+        <Button variant="outline" size="icon" className="button-teal" asChild>
           <a href="mailto:vinodh@example.com">
             <Mail className="h-5 w-5" />
             <span className="sr-only">Email address</span>
